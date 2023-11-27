@@ -1905,3 +1905,7 @@ img.image-association {
   padding: 6rem 0;
   color: #04040c;
 }
+
+#subscribe table td {
+  min-width: 100px;
+}
