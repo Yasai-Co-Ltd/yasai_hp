@@ -1909,3 +1909,8 @@ img.image-association {
 #subscribe table td {
   min-width: 100px;
 }
+
+/* Dify Style */
+#dify-chatbot-bubble-window {
+  top: 3%;
+}
