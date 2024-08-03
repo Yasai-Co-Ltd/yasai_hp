@@ -1913,4 +1913,16 @@ img.image-association {
 /* Dify Style */
 #dify-chatbot-bubble-window {
   top: 3%;
+  z-index: 1000 !important;
+}
+
+@media only screen and (max-width: 768px) {
+  #dify-chatbot-bubble-window {
+    top: 12% !important;
+  }
+
+  #dify-chatbot-bubble-button {
+    top: 3% !important;
+    z-index: 9999 !important;
+  }
 }
