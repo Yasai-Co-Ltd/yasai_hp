@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 0 100% 45%; /* YASAI red #e60012 */
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 100% 45%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 100% 45%; /* YASAI red #e60012 */
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 100% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+/* YASAI Specific Styles */
+.yasai-container {
+  @apply container mx-auto px-4 md:px-6;
+}
+
+/* Japanese Font Family Support */
+@font-face {
+  font-family: 'M PLUS Rounded 1c';
+  src: url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700&display=swap');
+}
+
+body {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.yasai-header {
+  @apply bg-primary text-white py-4;
+}
+
+.yasai-footer {
+  @apply bg-primary text-white py-8;
+}
+
+.yasai-section {
+  @apply py-16;
+}
+
+.yasai-hero {
+  @apply bg-primary/5 py-20;
+}
+
+.yasai-card {
+  @apply transition-transform duration-300 hover:scale-105;
+}
+
+.yasai-button {
+  @apply bg-[#00f94e] hover:!bg-[#00b786] text-white font-bold py-3 px-6 rounded-lg transition-all;
+}
