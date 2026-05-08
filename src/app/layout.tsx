@@ -5,9 +5,10 @@ import Footer from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
   title: "YASAI株式会社 - AIをベースにしたサービスを提供",
-  description: "YASAI株式会社は、AIをベースにしたデジタルサービスを提供する会社です。ビジネス課題の解決からデータ活用、人材育成まで、幅広くサポートします。",
+  description:
+    "YASAI株式会社は、AIをベースにしたデジタルサービスを提供する会社です。ビジネス課題の解決からデータ活用、人材育成まで、幅広くサポートします。",
   icons: {
-    icon: '/favicon.ico',
+    icon: "/favicon.ico",
   },
 };
 
@@ -36,7 +37,7 @@ export default function RootLayout({
               window.chatWidgetConfig = {
                 chatId: 'c01ef15c-cf51-4b9e-af9f-2d63cf9c059a',
                 baseUrl: 'https://yabot.yas-ai.io',
-                autoOpen: true
+                autoOpen: false
               }
             `,
           }}
