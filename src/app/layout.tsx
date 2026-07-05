@@ -4,7 +4,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
-  title: "YASAI株式会社 - AIをベースにしたサービスを提供",
+  title: "YASAI株式会社 | 戦略にAIの魔法を。",
   description:
     "YASAI株式会社は、AIをベースにしたデジタルサービスを提供する会社です。ビジネス課題の解決からデータ活用、人材育成まで、幅広くサポートします。",
   icons: {
