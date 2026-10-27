@@ -1,19 +1,23 @@
-import React from 'react'
-import Link from 'next/link'
-import { Button } from '@/components/ui/button'
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
-import Image from 'next/image'
+import React from "react";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import Image from "next/image";
+import HeaderNavLink from "@/components/layout/HeaderNavLink";
 
 const Header = () => {
   return (
     <header className="yasai-header sticky top-0 z-50">
       <div className="yasai-container flex items-center justify-between h-16">
-        {/* Logo */}
         <Link href="/" className="flex items-center space-x-2">
-          <Image src="/images/yasai-logo_squere.png" width={60} height={60} alt='YASAI株式会社' />
+          <Image
+            src="/images/yasai-logo_squere.png"
+            width={60}
+            height={60}
+            alt="YASAI株式会社"
+          />
         </Link>
 
-        {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-6">
           <Link href="/" className="text-white hover:text-white/80">
             ホーム
@@ -21,24 +25,28 @@ const Header = () => {
           <Link href="/#intro" className="text-white hover:text-white/80">
             ごあいさつ
           </Link>
-          <Link href="/#service" className="text-white hover:text-white/80">
+          <HeaderNavLink href="/#service" activePathPrefix="/services">
             サービス
-          </Link>
+          </HeaderNavLink>
           <Link href="/about" className="text-white hover:text-white/80">
             YASAIについて
           </Link>
+          <HeaderNavLink href="/works" activePathPrefix="/works">
+            制作実績
+          </HeaderNavLink>
         </nav>
 
-        {/* Contact Button */}
         <div className="hidden md:block">
           <Link href="/contact">
-            <Button variant="outline" className="bg-white text-primary hover:bg-white/90">
+            <Button
+              variant="outline"
+              className="bg-white text-primary hover:bg-white/90"
+            >
               お問い合わせ
             </Button>
           </Link>
         </div>
 
-        {/* Mobile Menu */}
         <Sheet>
           <SheetTrigger asChild>
             <Button variant="ghost" className="md:hidden p-2">
@@ -75,6 +83,9 @@ const Header = () => {
               <Link href="/about" className="text-lg font-medium">
                 YASAIについて
               </Link>
+              <Link href="/works" className="text-lg font-medium">
+                制作実績
+              </Link>
               <Link href="/contact" className="text-lg font-medium">
                 お問い合わせ
               </Link>
@@ -83,7 +94,7 @@ const Header = () => {
         </Sheet>
       </div>
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

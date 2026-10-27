@@ -46,6 +46,11 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li>
+                    <Link href="/works" className="text-sm text-white/80 hover:text-white">
+                      制作実績
+                    </Link>
+                  </li>
+                  <li>
                     <Link href="/contact" className="text-sm text-white/80 hover:text-white">
                       お問い合わせ
                     </Link>
@@ -117,7 +122,7 @@ const Footer = () => {
         </div>
 
         <Separator className="my-8 bg-white/20" />
-        <p className="text-center text-xs text-white/60">©2024 YASAI株式会社 All Rights Reserved.</p>
+        <p className="text-center text-xs text-white/60">©2026 YASAI株式会社 All Rights Reserved.</p>
       </div>
     </footer>
   )
