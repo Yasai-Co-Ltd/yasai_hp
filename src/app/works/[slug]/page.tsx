@@ -109,9 +109,9 @@ export default async function WorkDetailPage({ params }: PageProps) {
               </dl>
             </div>
             <div>
-              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 leading-relaxed">
+              <h3 className="text-xl md:text-3xl font-bold text-gray-900 mb-6 leading-relaxed [word-break:auto-phrase]">
                 {work.overviewHeading[0]}
-                <br />
+                <br className="hidden md:block" />
                 {work.overviewHeading[1]}
               </h3>
               <div className="space-y-6 text-gray-600 leading-loose">
