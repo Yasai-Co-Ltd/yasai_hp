@@ -26,7 +26,10 @@ export const works: Work[] = [
     tags: ["コーポレートサイト", "WordPress"],
     image: "/images/works/baseroom.png",
     url: "https://baseroom.jp/",
-    overviewHeading: ["勢いのあるビジュアルで、", "会社の熱量を伝える。"],
+    overviewHeading: [
+      "インフルエンサーのキャスティング・",
+      "マーケティング会社のコーポレートサイト制作。",
+    ],
     overviewText: [
       "株式会社BASEROOMは、現役インフルエンサーが経営する、キャスティング・制作・マーケティングの会社です。",
       "炎のグラデーションと手書き風のロゴを大きく使ったビジュアルで、所属タレントや事例を紹介するコーポレートサイトを制作しました。",
