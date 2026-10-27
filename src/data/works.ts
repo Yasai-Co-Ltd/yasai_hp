@@ -46,7 +46,7 @@ export const works: Work[] = [
     tags: ["ECサイト", "Shopify"],
     image: "/images/works/wataberu.png",
     url: "https://wataberu.com/",
-    overviewHeading: ["旅先で見つけた本物の味を、", "家で楽しむためのショップ。"],
+    overviewHeading: ["美食家・渡部氏がプロデュースする", "食品ECサイトの構築。"],
     overviewText: [
       "WATABERUは、美食家・渡部氏がプロデュースする食品の公式オンラインショップです。",
       "写真とイラストを組み合わせたコラージュ風のビジュアルで、「家で、一流。わたべる。」のコンセプトを表現したECサイトを制作しました。",
@@ -63,7 +63,7 @@ export const works: Work[] = [
     tags: ["採用・募集サイト", "美容"],
     image: "/images/works/increa.png",
     url: "https://artist.increa.tokyo/",
-    overviewHeading: ["新しいメイク技術の担い手を、", "集めるためのサイト。"],
+    overviewHeading: ["次世代メイク技術「インクレア」の", "施術者募集・講習サイト制作。"],
     overviewText: [
       "INCRÉA.tokyoは、アートメイクとは異なる新しいメイク技術「インクレア」の施術者を募集する講習サイトです。",
       "スマートフォンでの閲覧を軸にしたレイアウトで、コンセプトや受講メニュー、受講者の声を紹介し、LINEからの応募につなげています。",
@@ -79,7 +79,7 @@ export const works: Work[] = [
     tags: ["診断コンテンツ", "人材紹介"],
     image: "/images/works/fairy-select.png",
     url: "https://fairy-select.jp/",
-    overviewHeading: ["10問の診断から、", "自分の強みを言葉にする。"],
+    overviewHeading: ["全10問で「自分の説明書」がつくれる", "診断コンテンツの開発。"],
     overviewText: [
       "妖精診断は、キャリアを考える人に向けた無料の診断コンテンツです。",
       "回答からタイプを判定して妖精のキャラクターで表現し、職務経歴書や面談に使えるスキルシートを作成。人材紹介サービスへの登録につなげる仕組みを開発しました。",
@@ -96,7 +96,7 @@ export const works: Work[] = [
     tags: ["美容室", "予約連携"],
     image: "/images/works/baron-beauty.png",
     url: "https://baronbeauty.tokyo/",
-    overviewHeading: ["完全個室の特別な時間を、", "予約の前から伝える。"],
+    overviewHeading: ["池袋の完全個室美容室の", "公式サイトと指名予約導線の構築。"],
     overviewText: [
       "BARON Beautyは、池袋駅東口から徒歩5分、5つの完全個室でマンツーマン施術を行う美容室です。",
       "スタイリストのプロフィールや得意なスタイルを紹介し、そのまま指名予約へ進める仕組みを開発しました。",
@@ -112,7 +112,7 @@ export const works: Work[] = [
     tags: ["コーポレートサイト", "Web3"],
     image: "/images/works/canvas.png",
     url: "https://canva3.jp/",
-    overviewHeading: ["Web2とWeb3の橋渡しを、", "伝えるサイト。"],
+    overviewHeading: ["Web2とWeb3をつなぐ支援会社の", "コーポレートサイト制作。"],
     overviewText: [
       "CANVAS INC.は、Web3コンサルティングとグローバルマーケティングで、日本ブランドの海外展開や新しい事業モデルを支援する会社です。",
       "事業内容やニュースを発信するコーポレートサイトを開発しました。",
@@ -128,7 +128,7 @@ export const works: Work[] = [
     tags: ["クリニック", "CMS"],
     image: "/images/works/lunage-clinic.png",
     url: "https://lunage-clinic.com/",
-    overviewHeading: ["メニューと料金を、", "迷わず選べるように。"],
+    overviewHeading: ["表参道の美容皮膚科・歯科クリニックの", "公式サイト制作。"],
     overviewText: [
       "medical and dental LUNAGE CLINICは、シミ・しわ・たるみなど大人の肌悩みを「切らずに」解消する、表参道の美容クリニックです。",
       "施術メニューと料金をカテゴリごとに管理・更新できる仕組みと、LINE予約への導線を備えたサイトを開発しました。",
@@ -144,7 +144,7 @@ export const works: Work[] = [
     tags: ["ショート動画", "SNS一括投稿"],
     image: "/images/works/ikkatsu.png",
     url: "https://ikkatsu.yas-ai.io/",
-    overviewHeading: ["発信を止めない、", "ショート動画の運用ツール。"],
+    overviewHeading: ["ショート動画を3つのSNSへ一括投稿できる", "自社ツールの開発・運営。"],
     overviewText: [
       "IKKATSU ショートは、YASAIが運営するショート動画の一括投稿・制作サービスです。",
       "3つのプラットフォームへの同時投稿や、ストックから自動で選ぶ定期投稿に対応。動画制作の依頼もでき、無料プランから始められます。",
