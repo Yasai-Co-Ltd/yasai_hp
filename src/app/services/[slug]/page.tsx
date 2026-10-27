@@ -222,10 +222,10 @@ export default async function ServiceDetailPage({ params }: PageProps) {
         </div>
       </section>
 
-      <section className="bg-gray-50 py-16">
-        <div className="yasai-container space-y-10">
-          {service.siteUrl ? (
-            <div className="flex flex-col gap-8 border-b border-gray-200 pb-10 md:flex-row md:items-center md:justify-between">
+      {service.siteUrl ? (
+        <section className="bg-gray-50 py-16">
+          <div className="yasai-container">
+            <div className="flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
               <div className="max-w-2xl">
                 <p className="text-sm font-bold text-primary mb-3">SERVICE SITE</p>
                 <h2 className="text-2xl font-bold text-gray-900 mb-3">
@@ -247,20 +247,20 @@ export default async function ServiceDetailPage({ params }: PageProps) {
                 </a>
               </div>
             </div>
-          ) : null}
-
-          <Contact />
-
-          <div className="text-center">
-            <Link
-              href="/#service"
-              className="text-sm font-medium text-primary hover:underline"
-            >
-              ← サービス一覧へ戻る
-            </Link>
           </div>
-        </div>
-      </section>
+        </section>
+      ) : null}
+
+      <Contact />
+
+      <div className="yasai-container py-8 text-center">
+        <Link
+          href="/#service"
+          className="text-sm font-medium text-primary hover:underline"
+        >
+          ← サービス一覧へ戻る
+        </Link>
+      </div>
     </>
   );
 }
