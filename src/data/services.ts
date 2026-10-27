@@ -12,6 +12,7 @@ export type Service = {
   siteUrl?: string;
   about: { label: string; heading: [string, string]; lead: string; text: string };
   concepts: { title: string; text: string; icon: "Flag" | "Sparkles" | "BookOpen" | "MessageCircle" | "ShieldCheck" | "Home" | "Video" | "Clock" | "Send" }[];
+  featuresHeading: string;
   features: { label: string; title: string; text: string; note: string; icon: "Sparkles" | "Goal" | "MessageCircle" | "ShieldCheck" | "Home" | "Video" | "Send" }[];
 };
 
@@ -34,6 +35,7 @@ export const services: Service[] = [
       lead: "カリキュラムづくりと学習管理を、ひとつの目的へ。",
       text: "人材育成では、「何を学ぶか」だけでなく、「何のために学ぶか」が大切です。hatakeは、AIによるカリキュラム生成を入り口に、ゴールへ向かう学習を支えます。",
     },
+    featuresHeading: "AIの力と、ゴール志向の学習管理。",
     concepts: [
       { title: "目指すゴール", text: "どのような人材を育てたいか。学びの先にある目的を起点に考えます。", icon: "Flag" },
       { title: "AIでカリキュラム生成", text: "学ぶ内容をカリキュラムへ。AIを活用して、学びの道筋づくりを支えます。", icon: "Sparkles" },
@@ -74,6 +76,7 @@ export const services: Service[] = [
       lead: "住宅会社選びのストレスを、LINEひとつで解消。",
       text: "注文住宅を考えはじめた方にとって、会社選びは最初の大きな悩みです。住まぽちは、中立なスタッフが希望に合う会社を厳選してご紹介し、お断りの連絡まで代行します。",
     },
+    featuresHeading: "LINEで、中立に、無料で。",
     concepts: [
       { title: "LINEで完結", text: "質問に答えるだけで、希望に合った住宅会社を提案します。", icon: "MessageCircle" },
       { title: "中立な立場で紹介", text: "特定の会社に偏らず、スタッフが厳選してご紹介します。", icon: "ShieldCheck" },
@@ -114,6 +117,7 @@ export const services: Service[] = [
       lead: "ひとりで抱えがちな悩みに、オンラインで寄り添う。",
       text: "性に関する悩みは、身近な人にも病院にも相談しづらいものです。IKU IKUは、オンライン診療とLINEでのやりとりで、気軽に専門家へ相談できる環境をつくります。",
     },
+    featuresHeading: "話しにくい悩みを、気軽に相談できる場所に。",
     concepts: [
       { title: "LINEで相談・予約", text: "いつものLINEから、気軽に相談や予約ができます。", icon: "MessageCircle" },
       { title: "オンラインで完結", text: "診察からお薬の配送まで、自宅で受けられます。", icon: "Send" },
@@ -140,7 +144,7 @@ export const services: Service[] = [
     slug: "short-movie",
     no: "04",
     name: "ショート動画制作",
-    category: "ショート動画制作",
+    category: "SNS動画制作",
     catch: "AIで効率化された動画制作でコスパの良いSNS運用をサポート。",
     heroLead: ["AIで効率化。", "続けられるSNS運用を。"],
     heroText:
@@ -154,6 +158,7 @@ export const services: Service[] = [
       lead: "制作の手間とコストを抑えて、発信を止めない。",
       text: "SNSでの発信には、ショート動画の継続的な投稿が欠かせません。YASAIはAIを活用した制作フローで、コストを抑えながら質の高いショート動画をお届けします。",
     },
+    featuresHeading: "AIで、早く、手頃に、続けられる。",
     concepts: [
       { title: "AIで効率化", text: "台本づくりから編集まで、AIを活用して制作を効率化します。", icon: "Sparkles" },
       { title: "コストを抑えて", text: "効率化した分、続けやすい価格での制作を目指します。", icon: "ShieldCheck" },

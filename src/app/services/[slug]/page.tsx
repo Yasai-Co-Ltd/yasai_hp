@@ -107,12 +107,12 @@ export default async function ServiceDetailPage({ params }: PageProps) {
               ) : null}
             </div>
             <div className="rounded-xl border border-gray-200 bg-gray-50 p-4">
-              <div className="relative aspect-[4/3] w-full overflow-hidden rounded-lg">
+              <div className="relative aspect-[4/3] w-full overflow-hidden rounded-lg bg-gray-50">
                 <Image
                   src={service.image}
                   alt={service.name}
                   fill
-                  className="object-cover"
+                  className="object-contain"
                   sizes="(max-width: 1024px) 100vw, 50vw"
                   priority
                 />
@@ -185,7 +185,10 @@ export default async function ServiceDetailPage({ params }: PageProps) {
 
       <section className="yasai-section bg-white">
         <div className="yasai-container">
-          <p className="text-sm font-bold text-primary mb-8">FEATURES</p>
+          <p className="text-sm font-bold text-primary mb-3">FEATURES</p>
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 leading-relaxed mb-10">
+            {service.featuresHeading}
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {service.features.map((feature, index) => {
               const Icon = getServiceIcon(feature.icon);
