@@ -25,8 +25,9 @@ const Services = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {services.map((service) => (
-            <Link key={service.slug} href={`/services/${service.slug}`}>
+          {services.map((service) => {
+            const external = Boolean(service.skipDetailPage && service.siteUrl);
+            const card = (
               <Card className="cursor-pointer yasai-card h-full">
                 <CardHeader className="pb-2">
                   <div className="text-sm font-medium text-gray-500 mb-1">
@@ -47,8 +48,28 @@ const Services = () => {
                   </div>
                 </CardContent>
               </Card>
-            </Link>
-          ))}
+            );
+
+            if (external) {
+              return (
+                <a
+                  key={service.slug}
+                  href={service.siteUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block h-full"
+                >
+                  {card}
+                </a>
+              );
+            }
+
+            return (
+              <Link key={service.slug} href={`/services/${service.slug}`} className="block h-full">
+                {card}
+              </Link>
+            );
+          })}
         </div>
       </div>
     </section>

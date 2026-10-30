@@ -10,6 +10,8 @@ export type Service = {
   tags: string[];
   image: string;
   siteUrl?: string;
+  /** true のとき TOP カードは siteUrl へ。詳細ページは生成しない */
+  skipDetailPage?: boolean;
   about: { label: string; heading: [string, string]; lead: string; text: string };
   concepts: { title: string; text: string; icon: "Flag" | "Sparkles" | "BookOpen" | "MessageCircle" | "ShieldCheck" | "Home" | "Video" | "Clock" | "Send" }[];
   featuresHeading: string;
@@ -177,6 +179,61 @@ export const services: Service[] = [
         title: "続けることで、成果につなげる。",
         text: "YouTube Shorts、TikTok、Instagram Reels など、各SNSでの継続的な運用をサポート。コスパの良い運用で、認知拡大につなげます。",
         note: "続けやすい動画運用を、YASAIと。",
+        icon: "Video",
+      },
+    ],
+  },
+  {
+    slug: "ikkatsu",
+    no: "05",
+    name: "IKKATSU ショート",
+    category: "ショート動画一括投稿",
+    catch:
+      "YouTube Shorts・TikTok・Instagram Reels に一括で予約・定期投稿でき、動画制作も依頼できるツール。",
+    heroLead: ["ショート動画の投稿を、", "まとめて、自動で。"],
+    heroText:
+      "IKKATSU ショートは、YASAIが運営するショート動画の一括投稿・制作サービスです。3つのプラットフォームへの同時投稿や、ストックから自動で選ぶ定期投稿に対応。動画制作の依頼もでき、無料プランから始められます。",
+    tags: ["ショート動画", "SNS一括投稿"],
+    image: "/images/service-ikkatsu.png", // Figma TOP node 690:246（356-2043）
+    siteUrl: "https://ikkatsu.yas-ai.io/",
+    skipDetailPage: true,
+    about: {
+      label: "ABOUT IKKATSU SHORT",
+      heading: ["ショート動画を3つのSNSへ", "一括投稿できる。"],
+      lead: "投稿・制作・運用を、ひとつのツールで。",
+      text: "IKKATSU ショートは、YASAIが運営するショート動画の一括投稿・制作サービスです。",
+    },
+    featuresHeading: "投稿をまとめて、続けやすく。",
+    concepts: [
+      {
+        title: "3プラットフォームへ一括投稿",
+        text: "YouTube Shorts、TikTok、Instagram Reelsへ同時に投稿できます。",
+        icon: "Send",
+      },
+      {
+        title: "予約・定期投稿",
+        text: "好きな日時の予約や、ストックからの自動投稿に対応します。",
+        icon: "Clock",
+      },
+      {
+        title: "動画制作も依頼可能",
+        text: "動画がない場合は制作依頼も。完成後そのまま投稿できます。",
+        icon: "Video",
+      },
+    ],
+    features: [
+      {
+        label: "投稿 × 自動化",
+        title: "ショート動画の投稿を、まとめて、自動で。",
+        text: "3つのプラットフォームへの同時投稿や、ストックから自動で選ぶ定期投稿に対応します。",
+        note: "投稿作業を減らして、制作に集中。",
+        icon: "Send",
+      },
+      {
+        label: "制作 × 運用",
+        title: "動画制作から投稿まで、ワンストップ。",
+        text: "切り抜き動画の制作依頼やAI動画制作にも対応。無料プランから始められます。",
+        note: "続けやすいショート動画運用を。",
         icon: "Video",
       },
     ],

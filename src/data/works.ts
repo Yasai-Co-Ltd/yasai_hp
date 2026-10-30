@@ -1,5 +1,5 @@
 // 掲載文 確定版 2026-10-19
-export type WorkCategory = "Webサイト制作" | "システム開発" | "自社運営";
+export type WorkCategory = "Webサイト制作" | "システム開発";
 export type Work = {
   slug: string;
   name: string;
@@ -132,22 +132,6 @@ export const works: Work[] = [
     overviewText: [
       "medical and dental LUNAGE CLINICは、シミ・しわ・たるみなど大人の肌悩みを「切らずに」解消する、表参道の美容クリニックです。",
       "施術メニューと料金をカテゴリごとに管理・更新できる仕組みと、LINE予約への導線を備えたサイトを開発しました。",
-    ],
-  },
-  {
-    slug: "ikkatsu",
-    name: "IKKATSU ショート",
-    category: "自社運営",
-    summary: "YouTube Shorts・TikTok・Instagram Reels に一括で予約・定期投稿でき、動画制作も依頼できるツール。",
-    lead: ["ショート動画の投稿を、", "まとめて、自動で。"],
-    caption: "IKKATSU ショート｜ショート動画一括投稿サービス",
-    tags: ["ショート動画", "SNS一括投稿"],
-    image: "/images/works/ikkatsu.png",
-    url: "https://ikkatsu.yas-ai.io/",
-    overviewHeading: ["ショート動画を3つのSNSへ一括投稿できる", "自社ツールの開発・運営。"],
-    overviewText: [
-      "IKKATSU ショートは、YASAIが運営するショート動画の一括投稿・制作サービスです。",
-      "3つのプラットフォームへの同時投稿や、ストックから自動で選ぶ定期投稿に対応。動画制作の依頼もでき、無料プランから始められます。",
     ],
   },
 ];

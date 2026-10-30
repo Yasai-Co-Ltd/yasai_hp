@@ -10,7 +10,9 @@ import { getServiceBySlug } from "@/lib/services-utils";
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return services.map((service) => ({ slug: service.slug }));
+  return services
+    .filter((service) => !service.skipDetailPage)
+    .map((service) => ({ slug: service.slug }));
 }
 
 type PageProps = {

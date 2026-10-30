@@ -3,7 +3,6 @@ import { works, type Work, type WorkCategory } from "@/data/works";
 export const WORK_CATEGORY_ORDER: WorkCategory[] = [
   "Webサイト制作",
   "システム開発",
-  "自社運営",
 ];
 
 export function getCategoriesInData(): WorkCategory[] {
@@ -15,7 +14,6 @@ export function countWorksByCategory(): Record<WorkCategory, number> {
   const counts: Record<WorkCategory, number> = {
     "Webサイト制作": 0,
     "システム開発": 0,
-    "自社運営": 0,
   };
   for (const work of works) {
     counts[work.category] += 1;
